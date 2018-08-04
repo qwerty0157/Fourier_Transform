@@ -16,13 +16,13 @@ namespace Fourier_Transform
             // 画像読み込み
             //var loadImage = ImageTransformByFFT.LoadByteImage(image);
             //byte[,] loadImage = ImageTransformByFFT.LoadByteImage("wtnbyou.bmp");
-            var loadImage = ImageTransformByFFT.LoadByteImage("../../../../input/wtnbyou.png");
+            var loadImage = ImageTransformByFFT.LoadByteImage("../../../../input/you.jpg");
 
             // 2次元フーリエ変換を行う
             var filterdata_2D = ImageTransformByFFT.FrequencyFiltering(loadImage);
 
             // 画像出力
-            ImageTransformByFFT.SaveByteImage(filterdata_2D, "../../../../output/wtnbyououtput.bmp");
+            ImageTransformByFFT.SaveByteImage(filterdata_2D, "../../../../output/output.bmp");
         }
     }
 }

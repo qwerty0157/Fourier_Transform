@@ -186,7 +186,7 @@ namespace Fourier_Transform
             out double[] outputIm,
             int bitSize)
         {
-            int dataSize = 1 << bitSize+1;
+            int dataSize = 1 << bitSize;
             int[] reverseBitArray = BitScrollArray(dataSize);
 
             //outputRe = new double[dataSize];
