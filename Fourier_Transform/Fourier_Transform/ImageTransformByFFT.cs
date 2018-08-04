@@ -186,11 +186,13 @@ namespace Fourier_Transform
             out double[] outputIm,
             int bitSize)
         {
-            int dataSize = 1 << bitSize;
+            int dataSize = 1 << bitSize+1;
             int[] reverseBitArray = BitScrollArray(dataSize);
 
-            outputRe = new double[dataSize];
-            outputIm = new double[dataSize];
+            //outputRe = new double[dataSize];
+            //outputIm = new double[dataSize];
+            outputRe = new double[inputRe.Length];
+            outputIm = new double[inputIm.Length];
 
             // バタフライ演算のための置き換え
             for (int i = 0; i < dataSize; i++)
