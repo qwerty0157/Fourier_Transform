@@ -35,8 +35,8 @@ namespace Fourier_Transform
             // 保存
             Bitmap img2 = complex.ToBitmap();
             img2.Save(@"output.jpg");
-            img2.Dispose();
-            */
+            img2.Dispose();*/
+
         }
     }
 }
