@@ -102,6 +102,12 @@
     <Reference Include="IPPrototyper">
       <HintPath>..\..\AForge.NET\Release\IPPrototyper.exe</HintPath>
     </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\packages\MathNet.Numerics.4.5.1\lib\net461\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -109,6 +115,7 @@
     <Compile Include="ImageFFT.cs" />
     <Compile Include="GrayScale.cs" />
     <Compile Include="ImageTransformByFFT.cs" />
+    <Compile Include="FFT.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
