@@ -37,7 +37,8 @@ namespace Fourier_Transform
             // 初期化、適当な値でテスト
             for (int i = 0; i < size; i++)
             {
-                data[i] = i;
+                var rnd = new Random();
+                data[i] = rnd.Next(10);
             }
 
             // 高速フーリエ変換、データが256個なのでbitSizeは8を指定
